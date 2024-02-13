@@ -161,8 +161,8 @@ span {
 }
 .social a {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background: var(--bg-color);
   color: var(--text-color);
   display: inline-flex;
@@ -196,21 +196,18 @@ span {
   transition: all 0.3s;
 }
 .social a:nth-child(2)::before {
-  background: #25d366;
-}
-.social a:nth-child(3)::before {
   background: #1da1f2;
 }
-.social a:nth-child(4)::before {
+.social a:nth-child(3)::before {
   background: #bababa;
 }
-.social a:nth-child(5)::before {
+.social a:nth-child(4)::before {
   background: #4267b2;
 }
-.social a:nth-child(6)::before {
+.social a:nth-child(5)::before {
   background: #0a66c2;
 }
-.social a:nth-child(7)::before {
+.social a:nth-child(6)::before {
   background: #24a1de;
 }
 .social a:hover::before {
@@ -224,31 +221,26 @@ span {
 }
 
 .social a:hover:nth-child(2) {
-  color: #25d366;
-  box-shadow: 0 0 50px #25d366;
-}
-
-.social a:hover:nth-child(3) {
   color: #1da1f2;
   box-shadow: 0 0 50px #1da1f2;
 }
 
-.social a:hover:nth-child(4) {
+.social a:hover:nth-child(3) {
   color: #bababa;
   box-shadow: 0 0 50px #bababa;
 }
 
-.social a:hover:nth-child(5) {
+.social a:hover:nth-child(4) {
   color: #4267b2;
   box-shadow: 0 0 50px #4267b2;
 }
 
-.social a:hover:nth-child(6) {
+.social a:hover:nth-child(5) {
   color: #0a66c2;
   box-shadow: 0 0 50px #0a66c2;
 }
 
-.social a:hover:nth-child(7) {
+.social a:hover:nth-child(6) {
   color: #24a1de;
   box-shadow: 0 0 50px #24a1de;
 }
