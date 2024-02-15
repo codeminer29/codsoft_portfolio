@@ -62,7 +62,7 @@ header {
   max-width: 150%;
   width: 150px;
   height: auto;
-  margin-right: 100px;
+  align-items: center;
 }
 .navlist {
   display: -webkit-box;
