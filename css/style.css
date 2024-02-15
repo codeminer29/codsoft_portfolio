@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -60,9 +59,10 @@ header {
   transition: 0.3s;
 }
 .logo img {
-  max-width: 100%;
-  width: 200px;
+  max-width: 150%;
+  width: 150px;
   height: auto;
+  margin-right: 100px;
 }
 .navlist {
   display: -webkit-box;
@@ -76,7 +76,7 @@ header {
   font-size: var(--p-font);
   color: var(--text-color);
   font-weight: 500;
-  padding: 10px 27px;
+  padding: 5px 15px;
 }
 .navlist a::after {
   content: "";
@@ -102,14 +102,14 @@ header {
 }
 .top-btn {
   display: inline-block;
-  padding: 9px 30px;
+  padding: 10px 20px;
   background: transparent;
   border: 2px solid var(--main-color);
   border-radius: 30px;
   color: var(--text-color);
   letter-spacing: 1px;
   font-size: var(--p-font);
-  font-weight: 500;
+  font-weight: 700;
   -webkit-transition: ease 0.5s;
   -o-transition: ease 0.5s;
   transition: ease 0.5s;
@@ -132,7 +132,7 @@ header {
 .checkbox-wrapper-54 ::after,
 .checkbox-wrapper-54 ::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .checkbox-wrapper-54 .switch {
@@ -145,7 +145,7 @@ header {
   height: var(--height-of-switch);
   display: inline-block;
   -webkit-filter: drop-shadow(0px 0px 5px var(--toggle));
-          filter: drop-shadow(0px 0px 5px var(--toggle));
+  filter: drop-shadow(0px 0px 5px var(--toggle));
 }
 
 .checkbox-wrapper-54 .slider {
@@ -171,8 +171,8 @@ header {
   left: var(--slider-offset, 0.3em);
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   background: -o-linear-gradient(50deg, #ff0080, #ff8c00 70%);
   background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
   -webkit-transition: 0.4s;
@@ -187,8 +187,9 @@ header {
 .checkbox-wrapper-54 input:checked + .slider:before {
   left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
   background: #303136;
-  -webkit-box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
-          box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  -webkit-box-shadow: inset -3px -2px 5px -2px #8983f7,
+    inset -10px -4px 0 0 #a3dafb;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
 
 section {
@@ -520,7 +521,13 @@ header.sticky {
 }
 .layer:hover {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(#191919));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.5)),
+    to(#191919)
+  );
   background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
 }
 .layer h3 {
