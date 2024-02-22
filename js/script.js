@@ -33,3 +33,12 @@ var mode = document.getElementById("mode");
       mode.onclick = function(){
         document.body.classList.toggle("dark-mode");
 }
+
+const logo = document.getElementById("logo");
+mode.addEventListener("click", function() {
+  if (logo.src.endsWith("/img/logo1.png")) {
+    logo.src = "/img/logo2.png";
+  } else {
+    logo.src = "/img/logo1.png";
+  }
+});
