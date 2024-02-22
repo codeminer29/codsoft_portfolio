@@ -57,7 +57,7 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: transparent;
-  padding: 300px 18%;
+  padding: 30px 16%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -130,7 +130,7 @@ header {
   height: var(--height-of-switch);
   display: inline-block;
   -webkit-filter: drop-shadow(0px 0px 10px var(--mode));
-          filter: drop-shadow(0px 0px 10px var(--mode));
+  filter: drop-shadow(0px 0px 10px var(--mode));
 }
 
 .checkbox-wrapper-54 .slider {
@@ -502,8 +502,8 @@ header.sticky {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   overflow: hidden;
   padding: 1rem;
   width: 100%;
@@ -513,7 +513,7 @@ header.sticky {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
     0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
     0 16px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
     0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
     0 16px 16px rgba(0, 0, 0, 0.1);
 }
@@ -535,7 +535,8 @@ header.sticky {
   transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
   -o-transition: transform calc(var(--d) * 1.5) var(--e);
   transition: transform calc(var(--d) * 1.5) var(--e);
-  transition: transform calc(var(--d) * 1.5) var(--e), -webkit-transform calc(var(--d) * 1.5) var(--e);
+  transition: transform calc(var(--d) * 1.5) var(--e),
+    -webkit-transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
 }
 .card:after {
@@ -549,7 +550,8 @@ header.sticky {
   pointer-events: none;
   background-image: -webkit-gradient(
     linear,
-    left top, left bottom,
+    left top,
+    left bottom,
     from(rgba(0, 0, 0, 0)),
     color-stop(11.7%, rgba(0, 0, 0, 0.009)),
     color-stop(22.1%, rgba(0, 0, 0, 0.034)),
@@ -606,13 +608,14 @@ header.sticky {
     rgba(0, 0, 0, 0.79) 100%
   );
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: -webkit-transform calc(var(--d) * 2) var(--e);
   transition: -webkit-transform calc(var(--d) * 2) var(--e);
   -o-transition: transform calc(var(--d) * 2) var(--e);
   transition: transform calc(var(--d) * 2) var(--e);
-  transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
+  transition: transform calc(var(--d) * 2) var(--e),
+    -webkit-transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
   background-image: url("/img/calculator.png");
@@ -634,11 +637,11 @@ header.sticky {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   padding: 1rem;
   -webkit-transition: -webkit-transform var(--d) var(--e);
@@ -688,60 +691,62 @@ header.sticky {
 @media (hover: hover) and (min-width: 600px) {
   .card:after {
     -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
 
   .content {
     -webkit-transform: translateY(calc(100% - 4.5rem));
-        -ms-transform: translateY(calc(100% - 4.5rem));
-            transform: translateY(calc(100% - 4.5rem));
+    -ms-transform: translateY(calc(100% - 4.5rem));
+    transform: translateY(calc(100% - 4.5rem));
   }
   .content > *:not(.title) {
     opacity: 0;
     -webkit-transform: translateY(1rem);
-        -ms-transform: translateY(1rem);
-            transform: translateY(1rem);
-    -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    -ms-transform: translateY(1rem);
+    transform: translateY(1rem);
+    -webkit-transition: opacity var(--d) var(--e),
+      -webkit-transform var(--d) var(--e);
     transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
     -o-transition: transform var(--d) var(--e), opacity var(--d) var(--e);
     transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-    transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e),
+      -webkit-transform var(--d) var(--e);
   }
 
   .card:hover,
   .card:focus-within {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .card:hover:before,
   .card:focus-within:before {
     -webkit-transform: translateY(-4%);
-        -ms-transform: translateY(-4%);
-            transform: translateY(-4%);
+    -ms-transform: translateY(-4%);
+    transform: translateY(-4%);
   }
   .card:hover:after,
   .card:focus-within:after {
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   .card:hover .content,
   .card:focus-within .content {
     -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
   .card:hover .content > *:not(.title),
   .card:focus-within .content > *:not(.title) {
     opacity: 1;
     -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
     -webkit-transition-delay: calc(var(--d) / 8);
-         -o-transition-delay: calc(var(--d) / 8);
-            transition-delay: calc(var(--d) / 8);
+    -o-transition-delay: calc(var(--d) / 8);
+    transition-delay: calc(var(--d) / 8);
   }
 
   .card:focus-within:before,
@@ -749,8 +754,8 @@ header.sticky {
   .card:focus-within .content,
   .card:focus-within .content > *:not(.title) {
     -webkit-transition-duration: 0s;
-         -o-transition-duration: 0s;
-            transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
   }
 }
 
@@ -958,7 +963,7 @@ header.sticky {
     flex-direction: column;
     background: var(--navbar);
     -webkit-backdrop-filter: blur(35px);
-            backdrop-filter: blur(35px);
+    backdrop-filter: blur(35px);
     text-align: center;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -985,8 +990,8 @@ header.sticky {
   .checkbox-wrapper-54 {
     margin: 1rem;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -1003,11 +1008,11 @@ header.sticky {
     width: 400px;
     height: auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .about {
     -ms-grid-columns: 1fr;
